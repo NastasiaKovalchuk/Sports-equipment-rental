@@ -1,0 +1,29 @@
+<div class="row">
+  <form action="/auth/signup" method="POST" class="form col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="Name" name="username" id="first_name" type="text" class="auth">
+        <label for="first_name"></label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="email" placeholder="Email" name="email" type="email" class="auth">
+        <label for="email"></label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="password" placeholder="Password" name="password" type="password" class="auth">
+        <label for="password"></label>
+      </div>
+    </div>
+    <button class="authBtn">Sign up</button>
+  </form>
+</div>
+
+
+{{#if error}}
+<div>{{error}}</div>
+{{/if}}
+</div>

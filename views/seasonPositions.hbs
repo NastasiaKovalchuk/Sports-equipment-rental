@@ -1,0 +1,27 @@
+<div class="body">
+  {{#each allpositionsWinter}}
+  <a href="/position/{{this._id}}" class="publics" id="{{this._id}}">
+    <img class="seasonImage" src="{{this.img}}">
+    <div>{{this.fullName}}</div>
+    <div >{{this.costday}}</div>
+  </div>
+  {{/each}}
+</a>
+
+<div class="div">
+  {{#each allpositionsWater}}
+  <a href="/position/{{this._id}}" class="publics" id="{{this._id}}">
+    <img class="seasonImage" src="{{this.img}}">
+    <div>{{this.fullName}}</div>
+    <div >{{this.costday}}</div>
+  </a>
+  {{/each}}
+
+<div class="div">
+  {{#each allpositionsSummer}}
+  <a href="/position/{{this._id}}" class="publics" id="{{this._id}}">
+    <img class="seasonImage" src="{{this.img}}">
+    <div>{{this.fullName}}</div>
+    <div >{{this.costday}}</div>
+  </a>
+  {{/each}}

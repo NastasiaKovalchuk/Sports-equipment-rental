@@ -1,0 +1,90 @@
+<div class="bodyForm">
+  <form class="orderForm" method="POST" action="/clothes/forms/{{position._id}}">
+    <div class="imgForm">
+      <h1>{{position.name}}</h1>
+      <img class="formImage" src="{{position.img}}">
+    </div>
+    <div class="add">
+      <div>Количество</div>
+      <div>Тариф аренды</div>
+      <div class="products-tarif">
+        <div class="dayTarif">
+          <div>Цена за день:</div>
+          <p>{{position.costday}}<i class="fas fa-ruble-sign"></i> / сутки</p>
+          <div class="radioTarif">
+            <div class="choose">
+              <div>1д</div>
+              <input type="radio" checked name="day" value="1д">
+            </div>
+            <div class="choose">
+              <div>5д</div>
+              <input type="radio" name="day" value="5д">
+            </div>
+            <div class="choose">
+              <div>7д</div>
+              <input type="radio" name="day" value="7д">
+          </div>
+          <div class="choose">
+            <div>14д</div>
+            <input type="radio" name="day" value="14д">
+          </div>
+          <div class="choose">
+            <div>25д</div>
+            <input type="radio" name="day" value="25д">
+          </div>
+        </div>
+      </div>
+      <div class="monthTarif">
+        <div>Цена за месяц:</div>
+        <p>{{position.costmonth}}<i class="fas fa-ruble-sign"></i> / месяц</p>
+        
+          <div class="radioTarif">
+            <div class="choose">
+              <div>1м</div>
+              <input type="radio"  name="day" value="1м">
+            </div>
+            <div class="choose">
+              <div>2м</div>
+              <input type="radio" name="day" value="2м">
+            </div>
+            <div class="choose">
+              <div>3м</div>
+              <input type="radio" name="day" value="3м">
+          </div>
+          <div class="choose">
+            <div>6м</div>
+            <input type="radio" name="day" value="6м">
+          </div>
+          <div class="choose">
+            <div>12м</div>
+            <input type="radio" name="day" value="12м">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <select name="select" id="selectID">
+      <option value='1'>1</option>
+      <option value='2'>2</option>
+      <option value='3'>3</option>
+      <option value='4'>4</option>
+      <option value='5'>5</option>
+      <option value='6'>6</option>
+      <option value='7'>7</option>
+      <option value='8'>8</option>
+      <option value='9'>9</option>
+      <option value='10'>10</option>
+      <option value='11'>11</option>
+      <option value='12'>12</option>
+      <option value='13'>13</option>
+      <option value='14'>14</option>
+      <option value='15'>15</option>
+      <option value='16'>16</option>
+      <option value='17'>17</option>
+      <option value='18'>18</option>
+      <option value='19'>19</option>
+      <option value='20'>20</option>
+    </select>
+    <button class="btnInBasket" type="submit">Добавить в корзину</button>
+</div>
+</form>

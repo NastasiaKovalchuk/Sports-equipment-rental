@@ -1,0 +1,22 @@
+<div class="loginForm">
+  <form method="POST" action="/auth/login" class="form  col s12">
+    <div>
+      <div class="">
+        <div class="input-field col s12">
+          <input id="email" name="email" placeholder="Email" type="email" class="auth">
+        </div>
+      </div>
+      <div class="">
+        <div class="input-field col s12">
+          <input id="password" placeholder="Password" name="password" type="password" class="auth">
+        </div>
+      </div>
+    </div>
+    <button class="authBtn">Login</button>
+  </form>
+</div>
+
+{{#if error}}
+<div>{{error}}</div>
+{{/if}}
+</div>
